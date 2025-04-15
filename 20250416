@@ -1,0 +1,14 @@
+SessionsControllerに何も書かれていないコードがある理由
+Railsは「アクション名と同じ名前のビューがあれば、自動で表示する」という仕組みを持っているからです。
+
+# app/controllers/sessions_controller.rb
+class SessionsController < ApplicationController
+  def new
+  end
+end
+このように何も書かれていなくても…
+
+
+# app/views/sessions/new.html.erb
+<!-- ログインフォームのHTMLを書く -->
+このビューがあれば、Railsは new アクションで自動的に new.html.erb を表示します。
