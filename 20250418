@@ -1,0 +1,18 @@
+マークダウンで画像を載せる方法
+![代替テキスト](画像のURL)
+
+
+require 'net/http'
+インターネット上のURLにアクセスしてデータを取得するときに使う
+
+
+🔍 URIとURLの違いってなに？
+
+用語	意味	例
+URL	Web上の住所（ファイルやページ）	https://github.com
+URI	URLも含むもっと広い概念	mailto:hello@example.com や ftp://... なども含む
+つまり、すべてのURLはURIの一種
+
+
+
+
